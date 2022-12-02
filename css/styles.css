@@ -75,6 +75,8 @@ body{
     margin-bottom: 25px;
     border: 1px solid transparent;
     transition: all .4s ease;
+
+    position: relative;
 }
 
 .hobbies__filter-button:hover{
@@ -86,14 +88,26 @@ body{
 
 .hobbies__filter-button span{
     display: none;
+    align-items: center;
+    justify-content: center;
 
-    margin-left: 5px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.2;
+
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 50%;
+    background: #ff0000;
+
+    color: #fff;
+
+    position: absolute;
+    top: 10px;
+    right: 53px;
 }
 
 .hobbies__filter-button span.visible{
-    display: block;
+    display: flex;
 }
 
 .hobbies__filter-result{

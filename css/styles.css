@@ -19,7 +19,7 @@ body{
 
 /* header */
 .header{
-    padding: 35px 0 55px;
+    padding-top: 35px;
 }
 
 .header__inner{
@@ -51,6 +51,10 @@ body{
 /*  */
 
 /* hobbies */
+.hobbies{
+    padding: 55px 0;
+}
+
 .hobbies__inner{
     display: flex;
     flex-direction: column;
@@ -168,9 +172,11 @@ body{
 }
 
 .hobbies__item-block{
+    min-height: 80px;
     width: 100%;
     padding: 10px 15px;
     background: rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .hobbies__item-title{
@@ -186,16 +192,16 @@ body{
 
     width: 30px;
     height: 30px;
-
     margin-left: auto;
 
     opacity: 0;
     visibility: hidden;
     transition: all .3s ease;
 
-    position: relative;
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
     z-index: 2;
-
 }
 
 .hobbies__show-button{

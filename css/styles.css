@@ -562,6 +562,10 @@ body{
     .up-button{
         right: 5%;
     }
+
+    .filter__inner{
+        height: 500px;
+    }
 }
 
 @media(max-width: 768px) {

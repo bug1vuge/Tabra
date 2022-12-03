@@ -282,6 +282,12 @@ body{
     cursor: pointer;
 }
 
+.filter__close-button img{
+    width: 30px;
+    height: 30px;   
+    object-fit: cover;
+}
+
 .filter__form-block{
     padding: 20px 30px;
     border-bottom: 1px solid #dcdcdc;
@@ -590,6 +596,12 @@ body{
     /* filter */
     .filter{
         max-width: 100%;
+    }
+
+    .filter__close-button img{
+        width: 24px;
+        height: 24px;   
+        object-fit: cover;
     }
 
     .filter__top-block{

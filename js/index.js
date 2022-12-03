@@ -6,7 +6,7 @@ const filterModule = () => {
           filterForm = document.querySelector('.filter__form'),
           filterResultCount = openFilter.querySelector('span'),
           filterCheckboxes = filter.querySelectorAll('input[type = "checkbox"]');
-    
+          marginOffset = window.innerWidth - document.body.offsetWidth;
 
     const closeFilterFunc = () => {
         filter.classList.remove('visible'); 
@@ -16,6 +16,8 @@ const filterModule = () => {
         if (filterResultCount.classList.contains('visible')) {
             filterResultCount.classList.remove('visible');
         };
+
+        body.style.marginRight = `${0}px`;
     }
 
     filter.addEventListener('click', (e) => {
@@ -43,6 +45,7 @@ const filterModule = () => {
     openFilter.addEventListener('click', (e) => { 
         filter.classList.add('visible'); 
         body.style.overflow = 'hidden';
+        body.style.marginRight = `${marginOffset}px`;
     });
 
 };
